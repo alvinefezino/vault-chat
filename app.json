@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Vault",
+    "slug": "vault-chat",
+    "scheme": "vault",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
+    "plugins": [
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow Vault to secure your keys with biometrics."
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow Vault to use Face ID for app lock."
+        }
+      ],
+      "expo-font",
+      "@react-native-google-signin/google-signin"
+    ],
+    "android": {
+      "package": "com.vault.secure",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.USE_BIOMETRIC"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0B141A"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.vault.secure"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "vault-dev-local"
+      }
+    }
+  }
+}

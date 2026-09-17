@@ -1,0 +1,51 @@
+import { Ionicons, Feather, MaterialCommunityIcons } from '@expo/vector-icons';
+import { palette } from './theme';
+
+// Vault icon map — single source for every glyph. Feather = stealth luxury (thin, precise).
+// Ionicons used only where Feather lacks (chat bubble fill, call).
+export const Icon = {
+  // navigation
+  chats:       (p:{size:number;color:string;focused?:boolean}) => <Ionicons name={p.focused ? "chatbubbles" : "chatbubbles-outline"} size={p.size} color={p.color} />,
+  feed:        (p:{size:number;color:string;focused?:boolean}) => <Feather name="layers" size={p.size} color={p.color} />,
+  calls:       (p:{size:number;color:string;focused?:boolean}) => <Ionicons name={p.focused ? "call" : "call-outline"} size={p.size} color={p.color} />,
+  settings:    (p:{size:number;color:string}) => <Feather name="settings" size={p.size} color={p.color} />,
+  // actions
+  search:      (p:{size:number;color:string}) => <Feather name="search" size={p.size} color={p.color} />,
+  add:         (p:{size:number;color:string}) => <Feather name="plus" size={p.size} color={p.color} />,
+  edit:        (p:{size:number;color:string}) => <Feather name="edit-3" size={p.size} color={p.color} />,
+  send:        (p:{size:number;color:string}) => <Feather name="send" size={p.size} color={p.color} style={{ marginLeft: 1 }} />,
+  attach:      (p:{size:number;color:string}) => <Feather name="paperclip" size={p.size} color={p.color} />,
+  smile:       (p:{size:number;color:string}) => <Feather name="smile" size={p.size} color={p.color} />,
+  check:       (p:{size:number;color:string}) => <Feather name="check" size={p.size} color={p.color} />,
+  checks:      (p:{size:number;color:string}) => <Feather name="check-circle" size={p.size} color={p.color} />,
+  lock:        (p:{size:number;color:string}) => <Feather name="lock" size={p.size} color={p.color} />,
+  shield:      (p:{size:number;color:string}) => <Feather name="shield" size={p.size} color={p.color} />,
+  shieldDone:  (p:{size:number;color:string}) => <MaterialCommunityIcons name="shield-check" size={p.size} color={p.color} />,
+  eyeOff:      (p:{size:number;color:string}) => <Feather name="eye-off" size={p.size} color={p.color} />,
+  clock:       (p:{size:number;color:string}) => <Feather name="clock" size={p.size} color={p.color} />,
+  mute:        (p:{size:number;color:string}) => <Feather name="volume-x" size={p.size} color={p.color} />,
+  pin:         (p:{size:number;color:string}) => <Feather name="bookmark" size={p.size} color={p.color} />,
+  more:        (p:{size:number;color:string}) => <Feather name="more-horizontal" size={p.size} color={p.color} />,
+  chevron:     (p:{size:number;color:string}) => <Feather name="chevron-right" size={p.size} color={p.color} />,
+  back:        (p:{size:number;color:string}) => <Feather name="chevron-left" size={p.size} color={p.color} />,
+  phone:       (p:{size:number;color:string}) => <Feather name="phone" size={p.size} color={p.color} />,
+  video:       (p:{size:number;color:string}) => <Feather name="video" size={p.size} color={p.color} />,
+  camera:      (p:{size:number;color:string}) => <Feather name="camera" size={p.size} color={p.color} />,
+  image:       (p:{size:number;color:string}) => <Feather name="image" size={p.size} color={p.color} />,
+  file:        (p:{size:number;color:string}) => <Feather name="file-text" size={p.size} color={p.color} />,
+  users:       (p:{size:number;color:string}) => <Feather name="users" size={p.size} color={p.color} />,
+  userPlus:    (p:{size:number;color:string}) => <Feather name="user-plus" size={p.size} color={p.color} />,
+  heart:       (p:{size:number;color:string}) => <Feather name="heart" size={p.size} color={p.color} />,
+  heartFill:   (p:{size:number;color:string}) => <Ionicons name="heart" size={p.size} color={p.color} />,
+  message:     (p:{size:number;color:string}) => <Feather name="message-circle" size={p.size} color={p.color} />,
+  share:       (p:{size:number;color:string}) => <Feather name="share-2" size={p.size} color={p.color} />,
+  bookmark:    (p:{size:number;color:string}) => <Feather name="bookmark" size={p.size} color={p.color} />,
+  bookmarkFill:(p:{size:number;color:string}) => <Ionicons name="bookmark" size={p.size} color={p.color} />,
+  close:       (p:{size:number;color:string}) => <Feather name="x" size={p.size} color={p.color} />,
+  qr:          (p:{size:number;color:string}) => <MaterialCommunityIcons name="qrcode" size={p.size} color={p.color} />,
+  info:        (p:{size:number;color:string}) => <Feather name="info" size={p.size} color={p.color} />,
+  alert:       (p:{size:number;color:string}) => <Feather name="alert-circle" size={p.size} color={p.color} />,
+  globe:       (p:{size:number;color:string}) => <Feather name="globe" size={p.size} color={p.color} />,
+  flag:        (p:{size:number;color:string}) => <Ionicons name="flag-outline" size={p.size} color={p.color} />,
+  logout:      (p:{size:number;color:string}) => <Feather name="log-out" size={p.size} color={p.color} />,
+};
