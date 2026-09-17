@@ -32,7 +32,8 @@
         }
       ],
       "expo-font",
-      "@react-native-google-signin/google-signin"
+      "@react-native-google-signin/google-signin",
+      "expo-system-ui"
     ],
     "android": {
       "package": "com.vault.secure",
